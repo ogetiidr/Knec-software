@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KCSE 2025 Scanning Software</title>
+<style>
+    body {
+        background: black;
+        color: #00ff00;
+        font-family: "Courier New", monospace;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        font-size: 32px;
+        text-shadow: 0 0 10px #00ff00;
+        margin-bottom: 10px;
+    }
+    .scan-text {
+        font-size: 16px;
+        margin-top: 10px;
+        animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+    .login-box {
+        margin-top: 30px;
+        padding: 20px;
+        border: 1px solid #00ff00;
+        width: 300px;
+        border-radius: 5px;
+        animation: glow 2s infinite;
+    }
+    @keyframes glow {
+        0% { box-shadow: 0 0 5px #00ff00; }
+        50% { box-shadow: 0 0 15px #00ff00; }
+        100% { box-shadow: 0 0 5px #00ff00; }
+    }
+    input {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        background: #001a00;
+        color: #00ff00;
+        border-bottom: 2px solid #00ff00;
+        font-size: 14px;
+    }
+    button {
+        margin-top: 15px;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        background: #00ff00;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    button:hover {
+        background: #00cc00;
+    }
+.terminal-line {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #00ff00;
+        opacity: 0.7;
+    }
+    .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://i.imgur.com/PHxblzC.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0.4;
+    }
+.hardcore-module {
+        margin-top: 20px;
+        padding: 15px;
+        border-top: 1px solid #00ff00;
+        width: 90%;
+        text-align: left;
+        max-width: 700px;
+    }
+    .terminal-line {
+        margin: 3px 0;
+        font-size: 14px;
+        opacity: 0.75;
+        animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 0.75; }
+    }
+.contact-admin {
+        display: block;
+        margin-bottom: 15px;
+        padding: 12px 20px;
+        background: #003300;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0 5px #00ff00;
+        transition: 0.3s;
+    }
+    .contact-admin:hover { background: #00ff00; color: black; }
+ {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #003300;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 5px #00ff00;
+        transition: 0.3s;
+    }
+    .contact-admin:hover {
+        background: #00ff00;
+        color: black;
+    }
+.contact-admin {
+        display: block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #003300;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        width: 250px;
+        text-shadow: 0 0 5px #00ff00;
+        transition: 0.3s;
+    }
+    .contact-admin:hover {
+        background: #00ff00;
+        color: black;
+    }
+</style>
+<script>
+function login() {
+    let username = document.getElementById("user").value;
+    let password = document.getElementById("pass").value;if(username === "Student" && password === "43728190"){
+    alert("Access Granted ✔ Redirecting to Scanning Page...");
+    window.location.href = "scan.html";
+} else {
+    alert("❌ Access Denied. Invalid Credentials.");
+}
+
+} </script>
+
+</head>
+<body>
+<div class="container">
+    <h1>KCSE 2025 SCANNING SOFTWARE</h1>
+    <div class="scan-text">Initializing System... Connecting to KNEC Secure Database...</div><div class="login-box">
+    <a class="contact-admin" href="https://wa.me/923411505861" target="_blank">CONTACT ADMIN FOR LOGIN</a>
+
+    <h3>Admin Login</h3>
+    <input type="text" id="user" placeholder="Enter Username" />
+    <input type="password" id="pass" placeholder="Enter Pass Code" />
+    <button onclick="login()">LOGIN</button>
+</div>
+
+</div>
+<div class="extra-effects">
+        <div class="terminal-line">[+] System Firewall Status: ACTIVE</div>
+        <div class="terminal-line">[+] KCSE 2025 Database Hash: VERIFIED</div>
+        <div class="terminal-line">[+] AI Scan Engine v3.2 Loaded</div>
+        <div class="terminal-line">[+] Encryption Key: *********</div>
+    </div>
+<div class="hardcore-module">
+        <div class="terminal-line">[BOOT] Initializing Quantum KCSE Scanner...</div>
+        <div class="terminal-line">[SCAN] Checking student behavior logs...</div>
+        <div class="terminal-line">[ALERT] TikTok usage detected — reducing IQ shield...</div>
+        <div class="terminal-line">[TRACE] Tracking past exam revisions...</div>
+        <div class="terminal-line">[HASH] Encrypting KCSE 2025 master keys...</div>
+        <div class="terminal-line">[ACCESS] Attempting deep system penetration...</div>
+        <div class="terminal-line">[OK] System hardening complete.    <a class="contact-admin" href="https://wa.me/923411505861" target="_blank">CONTACT ADMIN FOR LOGIN</a>
+        <a class="contact-admin" href="https://wa.me/923411505861" target="_blank">CONTACT ADMIN FOR LOGIN</a>
+    </div>
+</div>
+</body>
+</html>
